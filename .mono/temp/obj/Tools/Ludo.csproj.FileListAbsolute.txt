@@ -1,0 +1,6 @@
+/home/babayaga/Godot/Projects/ludo/.mono/temp/bin/Tools/Ludo.dll
+/home/babayaga/Godot/Projects/ludo/.mono/temp/bin/Tools/Ludo.pdb
+/home/babayaga/Godot/Projects/ludo/.mono/temp/obj/Tools/Ludo.csprojAssemblyReference.cache
+/home/babayaga/Godot/Projects/ludo/.mono/temp/obj/Tools/Ludo.csproj.CoreCompileInputs.cache
+/home/babayaga/Godot/Projects/ludo/.mono/temp/obj/Tools/Ludo.dll
+/home/babayaga/Godot/Projects/ludo/.mono/temp/obj/Tools/Ludo.pdb
