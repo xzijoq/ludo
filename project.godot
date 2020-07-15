@@ -16,11 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="Ludo"
+run/main_scene="res://scenes/GameManager.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-GlobalI="*res://scenes/scripts/Global_I.cs"
+GlobalI="*res://global/Global_I.cs"
 
 [display]
 

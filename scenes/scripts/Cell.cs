@@ -1,3 +1,4 @@
+ 
 using Godot;
 using System;
 
@@ -11,7 +12,7 @@ public class Cell : Sprite
     public void SetId(int newId){
 	this.id=newId;
 
-	GetNode<Button>("B1").Text=newId.ToString();
+	GetNode<Label>("B1").Text=newId.ToString();
 //	GD.Print(newId);
 
 	

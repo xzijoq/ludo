@@ -1,0 +1,6 @@
+* Additional features proposal 
+** saveing a roll to use later
+** dice highest roll sacrifice, for a desired num  
+** Larger or smaller dice ???
+* New Board
+** team game 2v2 3v3 etc
