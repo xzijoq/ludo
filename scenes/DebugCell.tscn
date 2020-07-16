@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/DebugTheme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/PlayerIcons/asd.png" type="Texture" id=2]
+[ext_resource path="res://scenes/scripts/DebugCell.cs" type="Script" id=3]
+
+[node name="DebugCell" type="Sprite"]
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+
+[node name="1" type="RichTextLabel" parent="."]
+margin_left = -32.0
+margin_top = -32.0
+theme = ExtResource( 1 )
+custom_colors/default_color = Color( 0.941176, 0.968627, 0.0352941, 1 )
+custom_colors/font_color_selected = Color( 0.917647, 0.945098, 0.0627451, 1 )
+scroll_active = false
+override_selected_font_color = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="RichTextLabel" parent="."]
+margin_top = -32.0
+margin_right = 32.0
+theme = ExtResource( 1 )
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="RichTextLabel" parent="."]
+margin_left = -32.0
+margin_bottom = 32.0
+theme = ExtResource( 1 )
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="RichTextLabel" parent="."]
+margin_right = 32.0
+margin_bottom = 32.0
+theme = ExtResource( 1 )
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}

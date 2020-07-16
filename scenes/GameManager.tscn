@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/scripts/GameManager.cs" type="Script" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
@@ -8,9 +8,15 @@
 [ext_resource path="res://assets/PlayerIcons/P1.png" type="Texture" id=6]
 [ext_resource path="res://scenes/scripts/GameEngine.cs" type="Script" id=7]
 [ext_resource path="res://scenes/Hud.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/Board.tscn" type="PackedScene" id=9]
 
 [node name="GameManager" type="Node2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Board" parent="." instance=ExtResource( 9 )]
 
 [node name="P0" parent="." instance=ExtResource( 2 )]
 z_index = 2
@@ -28,9 +34,16 @@ t1 = ExtResource( 4 )
 [node name="GameEngine" type="Node2D" parent="."]
 script = ExtResource( 7 )
 
-[node name="Hud" parent="." instance=ExtResource( 8 )]
+[node name="Dice" parent="." instance=ExtResource( 8 )]
 show_behind_parent = true
-margin_left = -2.0
-margin_top = 927.0
-margin_right = 591.0
-margin_bottom = 927.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -7.0
+margin_top = 858.937
+margin_right = 595.0
+margin_bottom = 1004.94
+
+[node name="DebugTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+[connection signal="timeout" from="DebugTimer" to="GameEngine" method="_on_DebugTimer_timeout"]

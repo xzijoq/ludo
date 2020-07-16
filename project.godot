@@ -21,11 +21,12 @@ config/icon="res://icon.png"
 
 [autoload]
 
+D_I="*res://global/D_I.cs"
 GlobalI="*res://global/Global_I.cs"
 
 [display]
 
-window/size/width=600
+window/size/width=1800
 window/size/height=1024
 
 [rendering]

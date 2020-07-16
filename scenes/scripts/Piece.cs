@@ -38,7 +38,7 @@ public class Piece : Sprite
             }
             else
             {
-                this.GlobalPosition = G2.Posi[G2.LudoBoard[square]];
+                this.GlobalPosition = G2.Posi[Global_I.LudoBoard[square]];
 
                 Square = square;
             }
